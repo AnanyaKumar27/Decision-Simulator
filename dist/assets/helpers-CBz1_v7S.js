@@ -1,0 +1,1 @@
+function r(t){if(!t)return"Just now";const n=typeof(t==null?void 0:t.toDate)=="function"?t.toDate():new Date(t);return Number.isNaN(n.getTime())?"Just now":new Intl.DateTimeFormat("en-IN",{day:"numeric",month:"short",year:"numeric"}).format(n)}export{r as f};
